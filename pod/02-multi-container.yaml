@@ -3,9 +3,9 @@ kind: pod
 metadata:
   name: multiple
 spec:
- containers:
- - image: nginx
-   name: nginx
- - image: almalinux
-   name: sidecar
-   command: ["sleep", "200"]
+  containers:
+  - image: nginx
+    name: nginx
+  - image: almalinux
+    name: sidecar
+    command: ["sleep", "200"]
