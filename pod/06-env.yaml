@@ -8,6 +8,6 @@ spec:
     image: nginx
     env:
     - name: cource
-     value: docker
+      value: docker
     - name: trainer
-     value: siva
+      value: siva
