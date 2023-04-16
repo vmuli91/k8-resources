@@ -7,3 +7,10 @@ spec:
   - image: venkateshreddymuli/stress
     imagePullPolicy: Always
     name: stress
+    resources:
+     requests:
+      cpu: "150m"
+      memory: "200Mi"
+     limits:
+      cpu: "200m"
+      memory: "300Mi"
