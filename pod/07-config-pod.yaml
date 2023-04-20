@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: cource
+      valueFrom:
+        configMapKeyRef:
+          name: cource-config
+          key: cource
+    - name: duration
+      valueFrom:
+        configMapKeyRef:
+          name: cource-config
+          key: duration
